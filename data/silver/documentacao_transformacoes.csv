@@ -1,0 +1,7 @@
+etapa,acao,detalhes
+1,Remocao de duplicatas,drop_duplicates() — linhas 100% identicas removidas
+2,Conversao de tipos de data,"incident_date, discovery_date, disclosure_date, created_at, updated_at -> datetime"
+3,Padronizacao de categorias,"lower().strip() em: attack_vector_primary/secondary, country_hq, data_type, attribution_confidence"
+4,Preenchimento de nulos,"attack_vector_secondary, attributed_group -> desconhecido; stock_ticker -> nao_capital_aberto; downtime_hours, data_compromised_records -> 0"
+5,Remocao anti-leakage,"Removidas: quality_score, quality_grade, confidence_tier, review_flag"
+6,Criacao do label ML,is_high_impact=1 se data_compromised_records>100k OU downtime_hours>72

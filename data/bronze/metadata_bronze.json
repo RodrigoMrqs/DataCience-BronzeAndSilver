@@ -1,0 +1,9 @@
+{
+  "arquivo": "incidents_master.csv",
+  "linhas": 850,
+  "colunas": 33,
+  "tamanho_bytes": 438941,
+  "hash_sha256": "9819d9ad6baeadca4c503d1146def6504da32e42b9e14e38b0008b24ffc84225",
+  "data_carga": "2026-04-06 19:42:26",
+  "camada": "bronze"
+}
