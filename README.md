@@ -68,3 +68,19 @@ Impacto Financeiro: Correlação entre incidentes e perdas financeiras.
 Tendência Temporal: Volume de ataques ao longo do tempo.
 
 🛡️ Checklist Anti-Leakage
+
+
+Coluna,Status,Justificativa
+
+
+incident_id,Mantido,Identificador único necessário para linhagem.
+
+
+timestamp,Tratado,Convertido para formato padrão ISO.
+
+
+outcome_status,Removido,Variável de resposta que não deve estar nas features.
+
+
+future_cost,Removido,Dado gerado após o evento (Risco de Leakage).
+
