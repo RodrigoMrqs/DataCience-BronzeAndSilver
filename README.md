@@ -9,11 +9,7 @@ O objetivo deste projeto é construir um fluxo rastreável de ingestão e tratam
 De acordo com a organização do projeto entregue:
 
 DataCience-BronzeAndSilver/
-|-- data/
-| |-- raw/ # Dados brutos originais
-| |-- bronze/ # Camada Bronze (Parquet + Metadados)
-| |-- silver/ # Camada Prata (Limpeza e ML Ready)
-|-- notebooks/ # Notebook principal do pipeline
-|-- reports/ # Checklist Anti-Leakage e Qualidade
-|-- .git/ # Versionamento
-|-- README.pdf # Documentacao do projeto
+├── data/
+│   ├── raw/
+│   ├── bronze/
+│   └── silver/
