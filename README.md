@@ -70,10 +70,24 @@ Tendência Temporal: Volume de ataques ao longo do tempo.
 ### ## Checklist Anti-Leakage
 
 +------------------+----------+------------------------------------------------+
+
+
 | Variável         | Status   | Justificativa                                  |
+
+
 +------------------+----------+------------------------------------------------+
+
+
 | outcome_status   | Removido | Variável de resposta (vazamento de dados).     |
+
+
 | future_costs     | Removido | Valor gerado após o incidente.                 |
+
+
 | incident_id      | Mantido  | Necessário para rastreabilidade.               |
+
+
 | timestamp        | Mantido  | Convertido para formato padrão.                |
+
+
 +------------------+----------+------------------------------------------------+
