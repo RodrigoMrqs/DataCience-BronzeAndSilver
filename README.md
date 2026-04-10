@@ -9,10 +9,24 @@ O objetivo deste projeto é construir um fluxo rastreável de ingestão e tratam
 De acordo com a organização do projeto entregue:
 
 ├── DataCience-BronzeAndSilver/
+
 │   ├── data/
-│   │   ├── raw/                # Arquivos originais (CSV/JSON)
-│   │   ├── bronze/             # Dados em Parquet com metadados de ingestão
-│   │   └── silver/             # Dados limpos e prontos para Machine Learning
-│   ├── notebooks/              # Pipeline principal e Análise Exploratória
-│   ├── reports/                # Relatórios de qualidade e Checklist Anti-Leakage
-│   └── .git/                   # Versionamento do código
+
+│   │   ├── raw/    
+
+# Arquivos originais (CSV/JSON)
+│   │   ├── bronze/    
+
+# Dados em Parquet com metadados de ingestão
+│   │   └── silver/  
+
+# Dados limpos e prontos para Machine Learning
+│   ├── notebooks/   
+
+# Pipeline principal e Análise Exploratória
+│   ├── reports/   
+
+# Relatórios de qualidade e Checklist Anti-Leakage
+│   └── .git/   
+
+# Versionamento do código
