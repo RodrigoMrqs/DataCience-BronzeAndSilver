@@ -91,3 +91,19 @@ Tendência Temporal: Volume de ataques ao longo do tempo.
 
 
 ### +------------------+----------+------------------------------------------------+
+
+
+## 🔗 Data Lineage (Linhagem de Dados)
+
+O fluxo de dados segue a trilha:
+Origem (Raw) ➔ Conversão & Metadados (Bronze) ➔ Regras de Qualidade ➔ Transformação & Limpeza (Prata) ➔ Dataset Final (ML Ready).
+
+## 🚀 Como Executar o Projeto
+
+Clone o repositório.
+
+Instale as dependências: pip install pandas pyarrow fastparquet matplotlib seaborn.
+
+Execute o notebook na pasta notebooks/ para processar as camadas.
+
+Os arquivos finais estarão disponíveis em data/silver/ no formato Parquet.
