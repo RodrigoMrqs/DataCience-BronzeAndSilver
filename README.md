@@ -72,7 +72,7 @@ Tendência Temporal: Volume de ataques ao longo do tempo.
 +------------------+----------+------------------------------------------------+
 
 
-| Variável         | Status   | Justificativa                                  |
+|            Variável         | Status   | Justificativa                       |
 
 
 +------------------+----------+------------------------------------------------+
