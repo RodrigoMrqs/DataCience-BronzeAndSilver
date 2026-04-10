@@ -8,18 +8,18 @@ O objetivo deste projeto é construir um fluxo rastreável de ingestão e tratam
 # 🏗️ Estrutura do Repositório
 De acordo com a organização do projeto entregue:
 
-├── DataCience-BronzeAndSilver/
+├──📂 DataCience-BronzeAndSilver/
 
-│   ├── data/
+│   ├── 📂data/
 
-│   │   ├── raw/   Arquivos originais (CSV/JSON)
+│   │   ├──📂 raw/   Arquivos originais (CSV/JSON)
 
-│   │   ├── bronze/  Dados em Parquet com metadados de ingestão
+│   │   ├──📂bronze/  Dados em Parquet com metadados de ingestão
 
-│   │   └── silver/  Dados limpos e prontos para Machine Learning
+│   │   └──📂silver/  Dados limpos e prontos para Machine Learning
 
-│   ├── notebooks/   Pipeline principal e Análise Exploratória
+│   ├── 📂notebooks/   Pipeline principal e Análise Exploratória
 
-│   ├── reports/  Relatórios de qualidade e Checklist Anti-Leakage
+│   ├── 📂reports/  Relatórios de qualidade e Checklist Anti-Leakage
 
-│   └── .git/  Versionamento do código
+│   └── 📄.git/  Versionamento do código
