@@ -23,3 +23,48 @@ De acordo com a organização do projeto entregue:
 │   ├── 📂reports/  : Relatórios de qualidade e Checklist Anti-Leakage
 
 │   └── 📄.git/  : Versionamento do código
+
+# 🛠️ Etapas do Pipeline de Dados
+## 1. Camada Bronze (Ingestão e Metadados)
+Nesta fase, os arquivos de origem são lidos e convertidos para o formato Parquet para otimizar o armazenamento e a performance.
+
+Padronização: Ajuste de nomes de colunas e tipos básicos.
+
+Governança: Inclusão de metadados técnicos:
+
+Nome do arquivo original.
+
+Timestamp da carga.
+
+Quantidade de registros.
+
+Hash de integridade (SHA-256).
+
+## 2. Validação de Qualidade
+Antes da promoção para a camada Prata, os dados da Bronze são submetidos a regras automáticas de validação:
+
+Verificação de valores nulos e duplicatas.
+
+Identificação de categorias inconsistentes.
+
+Formatação de campos de data fora do padrão.
+
+## 3. Camada Prata (Transformação e Feature Engineering)
+Nesta camada, os dados são refinados para uso analítico:
+
+Limpeza: Tratamento de valores ausentes e remoção de ruídos.
+
+Feature Engineering: Criação do rótulo final (label) para predição.
+
+Segurança de Dados: Remoção de colunas com risco de data leakage (variáveis que revelam o resultado antes da predição).
+
+# 📊 Análise Exploratória (EDA)
+O projeto inclui visualizações gráficas essenciais para compreensão do dataset:
+
+Distribuição de Incidentes: Frequência por tipo de ataque.
+
+Impacto Financeiro: Correlação entre incidentes e perdas financeiras.
+
+Tendência Temporal: Volume de ataques ao longo do tempo.
+
+🛡️ Checklist Anti-Leakage
