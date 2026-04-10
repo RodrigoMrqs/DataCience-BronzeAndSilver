@@ -1,7 +1,10 @@
-etapa,acao,detalhes
-1,Remocao de duplicatas,drop_duplicates() — linhas 100% identicas removidas
-2,Conversao de tipos de data,"incident_date, discovery_date, disclosure_date, created_at, updated_at -> datetime"
-3,Padronizacao de categorias,"lower().strip() em: attack_vector_primary/secondary, country_hq, data_type, attribution_confidence"
-4,Preenchimento de nulos,"attack_vector_secondary, attributed_group -> desconhecido; stock_ticker -> nao_capital_aberto; downtime_hours, data_compromised_records -> 0"
-5,Remocao anti-leakage,"Removidas: quality_score, quality_grade, confidence_tier, review_flag"
-6,Criacao do label ML,is_high_impact=1 se data_compromised_records>100k OU downtime_hours>72
+dataset,etapa,acao,detalhes
+todos,1,Remoção de duplicatas,drop_duplicates() — linhas 100% idênticas removidas
+todos,2,Padronização categórica,str.lower().strip() em todas as colunas de texto categórico
+incidents,3,Preenchimento de nulos,"attack_vector_secondary, attributed_group, attribution_confidence, data_type → ""desconhecido""; stock_ticker → ""nao_capital_aberto""; downtime_hours, data_compromised_records → 0"
+market,3,Preenchimento de nulos,days_to_price_recovery → -1 (sentinela: preço não recuperado)
+financials,3,Preenchimento de nulos,"ransom_demanded/paid, regulatory_fine, insurance_payout → 0; ransom_source → ""nao_aplicavel"""
+incidents,4,Remoção anti-leakage,"quality_score, quality_grade, confidence_tier, review_flag removidas"
+incidents,5,Label _is_high_impact,1 se data_compromised_records > 100k OU downtime_hours > 72
+financials,5,Label _is_severe_loss,1 se total_loss_usd > mediana do dataset
+market,5,Label _is_significant_drop,1 se abnormal_return_30d < -0.05 (queda anormal > 5%)

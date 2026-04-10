@@ -1,21 +1,21 @@
-coluna,tipo,nulos,pct_nulo,status
-incident_id,object,0,0.0,OK
-direct_loss_usd,float64,0,0.0,OK
-direct_loss_method,object,0,0.0,OK
-ransom_demanded_usd,float64,572,73.52,CRITICO - >50% nulos
-ransom_paid_usd,float64,692,88.95,CRITICO - >50% nulos
-ransom_source,object,692,88.95,CRITICO - >50% nulos
-recovery_cost_usd,float64,0,0.0,OK
-legal_fees_usd,float64,0,0.0,OK
-regulatory_fine_usd,float64,646,83.03,CRITICO - >50% nulos
-insurance_payout_usd,float64,343,44.09,ATENCAO - >20% nulos
-total_loss_usd,float64,0,0.0,OK
-total_loss_method,object,0,0.0,OK
-total_loss_lower_bound,float64,0,0.0,OK
-total_loss_upper_bound,float64,0,0.0,OK
-inflation_adjusted_usd,float64,0,0.0,OK
-cpi_index_used,object,0,0.0,OK
-notes,object,530,68.12,CRITICO - >50% nulos
-created_at,"datetime64[ns, UTC]",0,0.0,OK
-updated_at,"datetime64[ns, UTC]",0,0.0,OK
-_ingestion_timestamp,datetime64[ns],0,0.0,OK
+coluna,tipo,nulos,pct_nulo,duplicados,status
+incident_id,object,0,0.0,0.0,OK
+direct_loss_usd,float64,0,0.0,,OK
+direct_loss_method,object,0,0.0,775.0,OK
+ransom_demanded_usd,float64,572,73.52,,CRITICO - >50% nulos
+ransom_paid_usd,float64,692,88.95,,CRITICO - >50% nulos
+ransom_source,object,692,88.95,771.0,CRITICO - >50% nulos
+recovery_cost_usd,float64,0,0.0,,OK
+legal_fees_usd,float64,0,0.0,,OK
+regulatory_fine_usd,float64,646,83.03,,CRITICO - >50% nulos
+insurance_payout_usd,float64,343,44.09,,ATENCAO - >20% nulos
+total_loss_usd,float64,0,0.0,,OK
+total_loss_method,object,0,0.0,775.0,OK
+total_loss_lower_bound,float64,0,0.0,,OK
+total_loss_upper_bound,float64,0,0.0,,OK
+inflation_adjusted_usd,float64,0,0.0,,OK
+cpi_index_used,object,0,0.0,773.0,OK
+notes,object,530,68.12,634.0,CRITICO - >50% nulos
+created_at,"datetime64[ns, UTC]",0,0.0,,OK
+updated_at,"datetime64[ns, UTC]",0,0.0,,OK
+_ingestion_timestamp,datetime64[ns],0,0.0,,OK

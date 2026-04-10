@@ -1,34 +1,34 @@
-coluna,tipo,nulos,pct_nulo,status
-incident_id,object,0,0.0,OK
-company_name,object,0,0.0,OK
-company_revenue_usd,float64,0,0.0,OK
-country_hq,object,0,0.0,OK
-industry_primary,object,0,0.0,OK
-industry_secondary,object,697,82.0,CRITICO - >50% nulos
-employee_count,int64,0,0.0,OK
-is_public_company,bool,0,0.0,OK
-stock_ticker,object,438,51.53,CRITICO - >50% nulos
-incident_date,datetime64[ns],0,0.0,OK
-incident_date_estimated,bool,0,0.0,OK
-discovery_date,datetime64[ns],0,0.0,OK
-disclosure_date,datetime64[ns],0,0.0,OK
-attack_vector_primary,object,0,0.0,OK
-attack_vector_secondary,object,639,75.18,CRITICO - >50% nulos
-attack_chain,object,275,32.35,ATENCAO - >20% nulos
-attributed_group,object,368,43.29,ATENCAO - >20% nulos
-attribution_confidence,object,368,43.29,ATENCAO - >20% nulos
-data_compromised_records,float64,248,29.18,ATENCAO - >20% nulos
-data_type,object,248,29.18,ATENCAO - >20% nulos
-systems_affected,object,0,0.0,OK
-downtime_hours,float64,430,50.59,CRITICO - >50% nulos
-data_source_primary,object,0,0.0,OK
-data_source_secondary,object,464,54.59,CRITICO - >50% nulos
-data_source_type,object,0,0.0,OK
-confidence_tier,int64,0,0.0,OK
-quality_score,float64,0,0.0,OK
-quality_grade,object,0,0.0,OK
-review_flag,object,780,91.76,CRITICO - >50% nulos
-notes,object,636,74.82,CRITICO - >50% nulos
-created_at,"datetime64[ns, UTC]",0,0.0,OK
-updated_at,"datetime64[ns, UTC]",0,0.0,OK
-_ingestion_timestamp,datetime64[ns],0,0.0,OK
+coluna,tipo,nulos,pct_nulo,duplicados,status
+incident_id,object,0,0.0,0.0,OK
+company_name,object,0,0.0,100.0,OK
+company_revenue_usd,float64,0,0.0,,OK
+country_hq,object,0,0.0,812.0,OK
+industry_primary,object,0,0.0,830.0,OK
+industry_secondary,object,697,82.0,830.0,CRITICO - >50% nulos
+employee_count,int64,0,0.0,,OK
+is_public_company,bool,0,0.0,,OK
+stock_ticker,object,438,51.53,490.0,CRITICO - >50% nulos
+incident_date,datetime64[ns],0,0.0,,OK
+incident_date_estimated,bool,0,0.0,,OK
+discovery_date,datetime64[ns],0,0.0,,OK
+disclosure_date,datetime64[ns],0,0.0,,OK
+attack_vector_primary,object,0,0.0,841.0,OK
+attack_vector_secondary,object,639,75.18,840.0,CRITICO - >50% nulos
+attack_chain,object,275,32.35,840.0,ATENCAO - >20% nulos
+attributed_group,object,368,43.29,818.0,ATENCAO - >20% nulos
+attribution_confidence,object,368,43.29,845.0,ATENCAO - >20% nulos
+data_compromised_records,float64,248,29.18,,ATENCAO - >20% nulos
+data_type,object,248,29.18,843.0,ATENCAO - >20% nulos
+systems_affected,object,0,0.0,218.0,OK
+downtime_hours,float64,430,50.59,,CRITICO - >50% nulos
+data_source_primary,object,0,0.0,0.0,OK
+data_source_secondary,object,464,54.59,463.0,CRITICO - >50% nulos
+data_source_type,object,0,0.0,845.0,OK
+confidence_tier,int64,0,0.0,,OK
+quality_score,float64,0,0.0,,OK
+quality_grade,object,0,0.0,847.0,OK
+review_flag,object,780,91.76,847.0,CRITICO - >50% nulos
+notes,object,636,74.82,789.0,CRITICO - >50% nulos
+created_at,"datetime64[ns, UTC]",0,0.0,,OK
+updated_at,"datetime64[ns, UTC]",0,0.0,,OK
+_ingestion_timestamp,datetime64[ns],0,0.0,,OK

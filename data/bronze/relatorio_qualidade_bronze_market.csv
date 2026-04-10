@@ -1,33 +1,33 @@
-coluna,tipo,nulos,pct_nulo,status
-incident_id,object,0,0.0,OK
-stock_ticker,object,0,0.0,OK
-price_7d_before,float64,0,0.0,OK
-price_disclosure_day,float64,0,0.0,OK
-price_1d_after,float64,0,0.0,OK
-price_7d_after,float64,0,0.0,OK
-price_30d_after,float64,0,0.0,OK
-volume_avg_30d_baseline,int64,0,0.0,OK
-volume_disclosure_day,int64,0,0.0,OK
-sector_index,object,0,0.0,OK
-sector_return_same_period,float64,0,0.0,OK
-abnormal_return_1d,float64,0,0.0,OK
-abnormal_return_7d,float64,0,0.0,OK
-abnormal_return_30d,float64,0,0.0,OK
-car_neg1_to_pos1,float64,0,0.0,OK
-car_0_to_7,float64,0,0.0,OK
-car_0_to_30,float64,0,0.0,OK
-car_0_to_90,float64,0,0.0,OK
-t_statistic_1d,float64,0,0.0,OK
-p_value_1d,float64,0,0.0,OK
-t_statistic_30d,float64,0,0.0,OK
-p_value_30d,float64,0,0.0,OK
-earnings_announcement_within_7d,bool,0,0.0,OK
-market_cap_at_disclosure,float64,0,0.0,OK
-volume_ratio_disclosure,float64,0,0.0,OK
-pre_incident_volatility_30d,float64,0,0.0,OK
-post_incident_volatility_30d,float64,0,0.0,OK
-days_to_price_recovery,float64,36,10.06,OK
-notes,object,266,74.3,CRITICO - >50% nulos
-created_at,"datetime64[ns, UTC]",0,0.0,OK
-updated_at,"datetime64[ns, UTC]",0,0.0,OK
-_ingestion_timestamp,datetime64[ns],0,0.0,OK
+coluna,tipo,nulos,pct_nulo,duplicados,status
+incident_id,object,0,0.0,0.0,OK
+stock_ticker,object,0,0.0,41.0,OK
+price_7d_before,float64,0,0.0,,OK
+price_disclosure_day,float64,0,0.0,,OK
+price_1d_after,float64,0,0.0,,OK
+price_7d_after,float64,0,0.0,,OK
+price_30d_after,float64,0,0.0,,OK
+volume_avg_30d_baseline,int64,0,0.0,,OK
+volume_disclosure_day,int64,0,0.0,,OK
+sector_index,object,0,0.0,348.0,OK
+sector_return_same_period,float64,0,0.0,,OK
+abnormal_return_1d,float64,0,0.0,,OK
+abnormal_return_7d,float64,0,0.0,,OK
+abnormal_return_30d,float64,0,0.0,,OK
+car_neg1_to_pos1,float64,0,0.0,,OK
+car_0_to_7,float64,0,0.0,,OK
+car_0_to_30,float64,0,0.0,,OK
+car_0_to_90,float64,0,0.0,,OK
+t_statistic_1d,float64,0,0.0,,OK
+p_value_1d,float64,0,0.0,,OK
+t_statistic_30d,float64,0,0.0,,OK
+p_value_30d,float64,0,0.0,,OK
+earnings_announcement_within_7d,bool,0,0.0,,OK
+market_cap_at_disclosure,float64,0,0.0,,OK
+volume_ratio_disclosure,float64,0,0.0,,OK
+pre_incident_volatility_30d,float64,0,0.0,,OK
+post_incident_volatility_30d,float64,0,0.0,,OK
+days_to_price_recovery,float64,36,10.06,,OK
+notes,object,266,74.3,333.0,CRITICO - >50% nulos
+created_at,"datetime64[ns, UTC]",0,0.0,,OK
+updated_at,"datetime64[ns, UTC]",0,0.0,,OK
+_ingestion_timestamp,datetime64[ns],0,0.0,,OK

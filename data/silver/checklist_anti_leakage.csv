@@ -1,10 +1,12 @@
-coluna,risco,acao,justificativa
-quality_score,ALTO,REMOVIDA,Score calculado apos o incidente — vaza informacao do futuro
-quality_grade,ALTO,REMOVIDA,Grade derivada do quality_score — mesmo problema
-confidence_tier,ALTO,REMOVIDA,Tier de confianca atribuido pos-analise — leakage temporal
-review_flag,ALTO,REMOVIDA,Flag de revisao manual — informacao nao disponivel no momento do incidente
-disclosure_date,MEDIO,MANTIDA,"Data de divulgacao publica — usar apenas como feature temporal, nao como proxy do target"
-attribution_confidence,BAIXO,MANTIDA,Confianca de atribuicao — pode ser desconhecida no momento; tratada como categorica
-data_compromised_records,MEDIO,MANTIDA - USADA NO LABEL,Usada para definir o label is_high_impact; nao deve ser feature do modelo
-downtime_hours,MEDIO,MANTIDA - USADA NO LABEL,Idem — compoe o label; excluir das features de treinamento
-is_high_impact,N/A,LABEL,Variavel alvo criada para ML
+dataset,coluna,risco,acao,justificativa
+incidents,quality_score,ALTO,REMOVIDA,Score calculado pós-incidente — vaza informação do futuro
+incidents,quality_grade,ALTO,REMOVIDA,Grade derivada do quality_score
+incidents,confidence_tier,ALTO,REMOVIDA,Tier de confiança atribuído pós-análise
+incidents,review_flag,ALTO,REMOVIDA,Flag de revisão manual — indisponível no momento do incidente
+incidents,disclosure_date,MEDIO,MANTIDA,"Usar apenas como feature temporal, não como proxy do target"
+incidents,attribution_confidence,BAIXO,MANTIDA,Informação disponível no momento; tratada como categórica
+incidents,data_compromised_records,MEDIO,USADA NO LABEL (excluir das features),Compõe o label _is_high_impact
+incidents,downtime_hours,MEDIO,USADA NO LABEL (excluir das features),Compõe o label _is_high_impact
+market,car_0_to_90,MEDIO,MANTIDA,Retorno acumulado 90d — usar apenas para análise pós-evento
+market,days_to_price_recovery,MEDIO,MANTIDA,Resultado pós-incidente — não usar como feature preditiva
+financials,total_loss_usd,ALTO,USADA NO LABEL (excluir das features),Compõe o label _is_severe_loss
