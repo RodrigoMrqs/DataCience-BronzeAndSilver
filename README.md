@@ -100,7 +100,7 @@ Origem (Raw) ➔ Conversão & Metadados (Bronze) ➔ Regras de Qualidade ➔ Tra
 
 ## 🚀 Como Executar o Projeto
 
-Clone o repositório.
+### Clone o repositório.
 
 Instale as dependências: pip install pandas pyarrow fastparquet matplotlib seaborn.
 
